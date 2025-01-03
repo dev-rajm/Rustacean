@@ -3,41 +3,39 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    println!("Guess the number!");
+    println!("Welcome to the Number Guessing Game!");
+    println!("I'm thinking of a number between 1 and 100. Can you guess it?");
 
     let secret_number = rand::thread_rng().gen_range(1..=100); // Generate a integer number between 1-100
-    let mut chances = 5;
+    let mut chances = 10;
 
     loop {
-        println!("Chances left: {chances}!");
-        println!("Please enter your guess!");
+        println!("Please enter your guess: ");
     
         let mut guess = String::new();
     
         io::stdin()
         .read_line(&mut guess)
-        .expect("Failed to read line");
+        .expect("Failed to read line.");
     
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        println!("You guessed: {guess}");
-
         match guess.cmp(&secret_number) {
             Ordering::Less => {
-                println!("Too small!");
+                println!("Too small! Try again.");
                 chances -= 1;
             },
 
             Ordering::Greater => {
-                println!("Too big!");
+                println!("Too big! Try again");
                 chances -= 1;
             }
 
             Ordering::Equal => {
-                println!("You win!");
+                println!("Congratulations! You guessed the number in {} attempts.", 11-chances);
                 break;
             }
         }
