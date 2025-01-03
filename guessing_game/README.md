@@ -51,7 +51,7 @@ Enter your guess: 25
 Too low! Try again.
 
 Enter your guess: 37
-Congratulations! You guessed the number in 3 attempts.
+Congratulations! You guessed correct.
 ```
 
 ## 🧩 Customization

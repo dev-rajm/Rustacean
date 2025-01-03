@@ -35,11 +35,12 @@ fn main() {
             }
 
             Ordering::Equal => {
-                println!("Congratulations! You guessed the number in {} attempts.", 11-chances);
+                println!("Congratulations 🎉! You guessed correct.");
                 break;
             }
         }
 
+        // Check if player bund his all chances
         if chances==0 {
             println!("Out of chances! The secret number was {secret_number}. Better luck next time.");
             break;
