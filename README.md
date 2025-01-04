@@ -51,6 +51,10 @@ $ ./hello_rust
 | 🌍 Hello World          | [Program](hello_rust/)    |
 | 🚢 Hello Cargo          | [Program](hello_cargo/)   |
 | 🎮 Number Guessing Game | [Program](guessing_game/) |
+| 🚅 Variable             | [Program](variables/)     |
+| 🌀 Data Types           | [Program](datatypes/)     |
+| 🦾 Functions            | [Program](functions/)     |
+| 🚗 Can You Drive?       | [Program](can_drive/)     |
 
 ## 🤝 Contributions
 
