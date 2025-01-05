@@ -46,15 +46,16 @@ $ ./hello_rust
 
 ## 📃 Programs List
 
-| Program                 | Description               |
-| ----------------------- | ------------------------- |
-| 🌍 Hello World          | [Program](hello_rust/)    |
-| 🚢 Hello Cargo          | [Program](hello_cargo/)   |
-| 🎮 Number Guessing Game | [Program](guessing_game/) |
-| 🚅 Variable             | [Program](variables/)     |
-| 🌀 Data Types           | [Program](datatypes/)     |
-| 🦾 Functions            | [Program](functions/)     |
-| 🚗 Can You Drive?       | [Program](can_drive/)     |
+| Program                  | Description                        |
+| ------------------------ | ---------------------------------- |
+| 🌍 Hello World           | [Program](hello_rust/)             |
+| 🚢 Hello Cargo           | [Program](hello_cargo/)            |
+| 🎮 Number Guessing Game  | [Program](guessing_game/)          |
+| 🚅 Variable              | [Program](variables/)              |
+| 🌀 Data Types            | [Program](data_types/)             |
+| 🦾 Functions             | [Program](functions/)              |
+| 🚗 Conditional Statement | [Program](conditional_statements/) |
+| ➿ Loops                 | [Program](loops/)                  |
 
 ## 🤝 Contributions
 
