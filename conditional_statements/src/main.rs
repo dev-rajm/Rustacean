@@ -1,34 +1,35 @@
-use std::io;
+// 2. Write a function `fib` that finds the fibonacci of a number it takes from input
 
 fn main() {
-    let mut age = String::new(); // Mutable variable age
-
-    println!("Enter you age!");
-
-    // Take the age from user
-    io::stdin()
-    .read_line(&mut age)
-    .expect("Failed to read age");
-
-    let age: u8 = age.trim().parse().expect("Age must be a number"); // Typecast the age from string to number
-
-    let check = if can_drive(age) {"You can drive 🥳"} else {"You can't drive at this age 👴"}; // If-Else inline/in let statement
-
-    println!("Report: {check}");
+    println!("{}", fib_l(10));
 }
 
-// Can I drive?
-fn can_drive(age: u8) -> bool {
-    // Check if age is less than 18y
-    if age < 18 {
-        false
-    } 
-    // Check if age is greater than 48y
-    else if age > 48 {
-        false
-    } 
-    // Check if age is between 18 and 48
-    else {
-        true
+// using recursion
+fn fib_r(num: u32) ->u32 {
+    if num<=1 {
+        return num;
     }
+
+    return fib_r(num-1) + fib_r(num-2);
+}
+
+// using loop
+fn fib_l(num: u32) -> u32 {
+    let mut first = 0;
+    let mut second = 1;
+
+    if num==0 {
+        return first;
+    }
+    if num==1 {
+        return second;
+    }
+
+    for _ in 0..num-1 {
+        let temp = second;
+        second = first+second;
+        first=temp;
+    }
+
+    return second;
 }
