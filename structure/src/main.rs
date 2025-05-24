@@ -23,11 +23,13 @@ impl Rect {
 }
 
 fn main() {
+    // declare struct
     let rect1 = Rect {
         width: 10,
         height: 20,
     };
 
+    // Call associate function/method
     println!("Debug is {}", Rect::debug());
     println!("Area is {} m^2", rect1.area());
     println!("Perimeter is {} m", rect1.perimeter(1));
