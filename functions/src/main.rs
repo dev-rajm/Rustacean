@@ -1,19 +1,11 @@
+// 3. Write a function `get_string_length` that takes a string as an input and returns its length
+
 fn main() {
-
-    let x = 5; // Statement
-
-    let sum = add_y(x); // Statement
-
-    println!("X+Y = {sum}");
-
-    another_function(5.6,  'f'); // Call the function
+    let name = String::from("raj"); // Create a string
+    let len = get_string_length(name);
+    println!("The length of the string is {}", len);
 }
 
-fn add_y(num: i32) -> i32 {
-    let y = 9;
-    num + y // Expression (basically its return the num+y)
-}
-
-fn another_function(height: f32, unit: char) {
-    println!("My height is {height} {unit}");
+fn get_string_length(str: String) -> usize {
+    str.chars().count() // get the length
 }
