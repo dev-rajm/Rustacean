@@ -1,4 +1,4 @@
-# Options/Result Enums in Rust
+# Options Enum in Rust
 
 The Option enum lets you return either **Some** values or **None** value.
 
@@ -9,4 +9,3 @@ The Option enum is something that rust library provides you. It let you return n
 ## TLDR
 
 1. Null values in rust
-2. Error handling in rust
